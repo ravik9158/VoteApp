@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<title>VoteApp Products</title>
+<script th:replace="fragments/header :: headerElement"></script>
+</head>
+
+<body>
+<div th:replace="fragments/header :: header"></div>
+	<div class="container">
+		<h1>Products</h1>
+		<div th:each="product : ${products}">
+			<a th:href="@{/products/{productId}(productId=${product.id})}" th:text="${product.name}"></a>
+		</div>
+	</div>
+</body>
+</html>

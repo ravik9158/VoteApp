@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<title>VoteApp Homepage</title>
+<script th:replace="fragments/header :: headerElement"></script>
+	
+</head>
+
+<body>
+<div th:replace="fragments/header :: header"></div>
+	<div class="container">
+		<div class="row" style="margin-top: 1.5em;">
+			<div class="col-8">
+				<h1>Welcome to VoteApp</h1>
+			</div>
+			<div class="col-4">
+				<button class="btn btn-primary float-right" type="button" id="login">Login</button>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		let loginBtn = document.getElementById('login') 
+		
+		loginBtn.addEventListener('click', function() {
+			window.location.href = '/login'
+		});
+		
+	</script>
+</body>
+</html>
