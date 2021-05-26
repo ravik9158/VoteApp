@@ -1,5 +1,6 @@
 # VoteApp
-##a.k.a Customer feedback webapp (03/2021 - 05/2021)
+## a.k.a Customer feedback webapp (03/2021 - 05/2021)
+
 Tools -> Java, Springboot, jQuery, MySQL & Bootstrap
 An application where host can publish their products information and customers can recommend features
 for that product.
