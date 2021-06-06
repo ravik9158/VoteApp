@@ -6,11 +6,12 @@
 </head>
 
 <body>
-<div th:replace="fragments/header :: header"></div>
+	<div th:replace="fragments/header :: header"></div>
 	<div class="container">
 		<h1>Products</h1>
 		<div th:each="product : ${products}">
-			<a th:href="@{/products/{productId}(productId=${product.id})}" th:text="${product.name}"></a>
+			<a th:href="@{/products/{productId}(productId=${product.id})}"
+				th:text="${product.name}"></a>
 		</div>
 	</div>
 </body>

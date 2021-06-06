@@ -18,6 +18,7 @@
 					<h5 class="card-title" th:text="${feature.title}">Card title</h5>
 					<h6 class="card-subtitle mb-2 text-muted" th:text="${feature.status}">Card subtitle</h6>
 					<p class="card-text" th:text="${feature.description}"></p>
+					
 					<a th:href="@{/products/{productId}/features/{featureId}(productId=${product.id}, featureId=${feature.id})}" class="card-link">View Feature</a> 
 					
 				</div>

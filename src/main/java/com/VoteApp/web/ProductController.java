@@ -32,7 +32,7 @@ public class ProductController {
 
 	@Autowired
 	private ProductRepository productRepo;
-
+	
 	@GetMapping("/products/{productId}")
 	public String getProduct(@PathVariable Long productId, ModelMap model, HttpServletResponse response)
 			throws NotFoundException, IOException {
@@ -49,7 +49,7 @@ public class ProductController {
 	}
 
 	@GetMapping("/p/{productName}")
-	public String productUserView(@PathVariable String productName, ModelMap model) {
+	public String productUserView(@AuthenticationPrincipal User user, @PathVariable String productName, ModelMap model) {
 		if (productName != null) {
 			try {
 				String decodedProductName = URLDecoder.decode(productName, StandardCharsets.UTF_8.name());
