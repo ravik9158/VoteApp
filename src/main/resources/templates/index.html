@@ -10,29 +10,18 @@
 <div th:replace="fragments/header :: header"></div>
 	<div class="container">
 		<div class="row" style="margin-top: 1.5em;">
-			<div class="col-8">
+			<div>
 				<h1>Welcome to VoteApp</h1>
 			</div>
-<!-- 			<div class="col-4"> -->
-<!-- 				<button class="btn btn-primary float-right" type="button" id="login">Login</button> -->
-<!-- 			</div> -->
 		</div>
-		<div class="row">
-			<div>
+		<div class="row" style="margin-top: 1.5em;">
+			<div >
 				<p>VoteApp is a fully-functional customer feedback application where product owners can publish their 
 					products and customers can request for features for the same.</p>
-				<p>Other customers can view, comment and vote for a particular feature to express their feedback.</p>
-				<p>Only product owner, feature owner can edit details of their respective products/features.</p>	
+				<p>Other customers can view and comment for a particular feature to express their feedback.</p>
+				<p>Only product or feature owner can edit details of their respective products/features.</p>	
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript">
-		let loginBtn = document.getElementById('login') 
-		
-		loginBtn.addEventListener('click', function() {
-			window.location.href = '/login'
-		});
-		
-	</script>
 </body>
 </html>
