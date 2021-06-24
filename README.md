@@ -1,5 +1,5 @@
 # VoteApp
-## a.k.a Customer feedback webapp (03/2021 - 05/2021)
+## Customer feedback webapp (03/2021 - 05/2021)
 
 Tools -> Java, Springboot, jQuery, MySQL & Bootstrap
 
